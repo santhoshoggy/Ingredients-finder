@@ -11,7 +11,6 @@ export default function Header() {
                     <span className="gradient-text">Ingredients-finder</span>
                 </Link>
                 <div className={styles.links}>
-                    <Link href="/" className={styles.link}>Gallery</Link>
                     <button
                         className={styles.addButton}
                         onClick={() => window.dispatchEvent(new Event('open-add-modal'))}

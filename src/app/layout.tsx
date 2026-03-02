@@ -7,8 +7,8 @@ import Footer from '../components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Ingredients-finder | Premium Food Gallery',
-  description: 'A visually polished food image gallery to discover delicious recipes and ingredients.',
+  title: 'Ingredients-finder | Premium Recipes',
+  description: 'A visually polished platform to discover delicious recipes and ingredients.',
 };
 
 export default function RootLayout({

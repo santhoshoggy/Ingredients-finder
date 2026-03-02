@@ -30,7 +30,7 @@ export default function ClientFoodDetail({ id, defaultFoods }: { id: string, def
             <div style={{ textAlign: 'center', padding: '5rem 1rem' }}>
                 <h1 className="gradient-text" style={{ fontSize: '3rem', marginBottom: '1rem' }}>404 - Recipe Not Found</h1>
                 <p style={{ marginBottom: '2rem' }}>We could not find the recipe you were looking for.</p>
-                <Link href="/" className={styles.backLink}>&larr; Return to Gallery</Link>
+                <Link href="/" className={styles.backLink}>&larr; Return Home</Link>
             </div>
         );
     }
@@ -38,8 +38,8 @@ export default function ClientFoodDetail({ id, defaultFoods }: { id: string, def
     return (
         <article className={styles.container}>
             <div className={styles.navigation}>
-                <Link href="/" className={styles.backLink} aria-label="Back to Gallery">
-                    &larr; Back to Gallery
+                <Link href="/" className={styles.backLink} aria-label="Back Home">
+                    &larr; Back Home
                 </Link>
             </div>
 
