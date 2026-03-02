@@ -12,7 +12,7 @@ export const foods: Food[] = [
         id: 'idly',
         title: 'Soft & Fluffy Idly',
         description: 'Traditional South Indian steamed rice cakes, exceptionally soft and perfect for breakfast.',
-        image: 'https://images.unsplash.com/photo-1589301760014-d929f39ce9de?auto=format&fit=crop&q=80&w=800',
+        image: '/idly.jpg',
         ingredients: [
             '2 cups Idli Rice (parboiled rice)',
             '1/2 cup Urad Dal (split black gram)',
@@ -33,7 +33,7 @@ export const foods: Food[] = [
         id: 'dosai',
         title: 'Crispy Dosai',
         description: 'A thin, crispy, and golden South Indian crepe made from a fermented rice and lentil batter.',
-        image: 'https://images.unsplash.com/photo-1610196598971-ceca8452445b?auto=format&fit=crop&q=80&w=800',
+        image: '/dosa.jpg',
         ingredients: [
             '3 cups Raw Rice or Idli Rice',
             '1 cup Urad Dal',
@@ -55,7 +55,7 @@ export const foods: Food[] = [
         id: 'pongal',
         title: 'Ven Pongal',
         description: 'A comforting and savory porridge made of rice and lentils, tempered with black pepper and ghee.',
-        image: 'https://images.unsplash.com/photo-1614531341641-fc30f5dce9b2?auto=format&fit=crop&q=80&w=800',
+        image: '/ven pongal.jpg',
         ingredients: [
             '1/2 cup Raw Rice',
             '1/2 cup Moong Dal (split yellow lentils)',
@@ -80,7 +80,7 @@ export const foods: Food[] = [
         id: 'sambar',
         title: 'South Indian Sambar',
         description: 'A hearty lentil and mixed vegetable stew cooked with tamarind and freshly aromatic spices.',
-        image: 'https://images.unsplash.com/photo-1626779848520-213c32a0d17d?auto=format&fit=crop&q=80&w=800',
+        image: '/sambar.jpg',
         ingredients: [
             '1/2 cup Toor Dal (split pigeon peas)',
             '2 cups Mixed vegetables (drumsticks, carrots, pumpkin, onions)',
@@ -105,7 +105,7 @@ export const foods: Food[] = [
         id: 'payasam',
         title: 'Semiya Payasam',
         description: 'A rich and creamy traditional dessert made with roasted vermicelli, milk, cardamom, and nuts.',
-        image: 'https://images.unsplash.com/photo-1596489392263-d1dfd9a60cb3?auto=format&fit=crop&q=80&w=800',
+        image: '/payasam.jpg',
         ingredients: [
             '1/2 cup Vermicelli (Semiya)',
             '4 cups Whole Milk',
@@ -128,7 +128,7 @@ export const foods: Food[] = [
         id: 'chettinad-chicken',
         title: 'Chettinad Chicken Curry',
         description: 'A fiery, wildly flavorful curry from Tamil Nadu, known for its complex blend of freshly roasted spices.',
-        image: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80&w=800',
+        image: '/Chettinad Chicken Curry.jpg',
         ingredients: [
             '500g Chicken, cut into pieces',
             '2 large Onions, finely chopped',
