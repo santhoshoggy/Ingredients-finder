@@ -9,138 +9,146 @@ export interface Food {
 
 export const foods: Food[] = [
     {
-        id: 'creamy-pasta',
-        title: 'Creamy Garlic Parmesan Pasta',
-        description: 'A rich and creamy pasta dish elevated with fresh garlic, parmesan, and a touch of parsley.',
-        image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=800',
+        id: 'idly',
+        title: 'Soft & Fluffy Idly',
+        description: 'Traditional South Indian steamed rice cakes, exceptionally soft and perfect for breakfast.',
+        image: 'https://images.unsplash.com/photo-1589301760014-d929f39ce9de?auto=format&fit=crop&q=80&w=800',
         ingredients: [
-            '1 lb Fettuccine or linguine',
-            '2 tbsp Butter',
-            '4 cloves Garlic, minced',
-            '1 cup Heavy cream',
-            '1 cup Parmesan cheese, grated',
-            'Salt and black pepper to taste',
-            'Fresh parsley for garnish'
+            '2 cups Idli Rice (parboiled rice)',
+            '1/2 cup Urad Dal (split black gram)',
+            '1/4 tsp Fenugreek seeds',
+            'Water for grinding',
+            'Salt to taste'
         ],
         recipe: [
-            'Boil water and cook the pasta according to package instructions until al dente.',
-            'In a large skillet, melt the butter over medium heat. Add the minced garlic and sauté until fragrant (about 1 minute).',
-            'Pour in the heavy cream and let it simmer for 3-4 minutes until it slightly thickens.',
-            'Lower the heat and gradually whisk in the grated Parmesan cheese until the sauce is smooth.',
-            'Add the cooked pasta to the skillet, tossing well to coat it evenly in the cheese sauce.',
-            'Season with salt and pepper, garnish with fresh parsley, and serve immediately.'
+            'Wash and soak the idli rice in water for at least 4 hours.',
+            'Wash and soak the urad dal along with fenugreek seeds in water for 4 hours separately.',
+            'Grind the urad dal until fluffy and smooth, adding ice-cold water gradually.',
+            'Grind the rice into a slightly coarse paste.',
+            'Mix both batters together with salt, cover, and let it ferment overnight (8-10 hours).',
+            'Pour the fermented batter into greased idli molds and steam for 10-12 minutes until cooked.'
         ]
     },
     {
-        id: 'spicy-ramen',
-        title: 'Spicy Miso Ramen',
-        description: 'A comforting bowl of rich pork broth, chili oil, and perfectly cooked noodles.',
-        image: 'https://images.unsplash.com/photo-1557872943-16a5ac26437e?auto=format&fit=crop&q=80&w=800',
+        id: 'dosai',
+        title: 'Crispy Dosai',
+        description: 'A thin, crispy, and golden South Indian crepe made from a fermented rice and lentil batter.',
+        image: 'https://images.unsplash.com/photo-1610196598971-ceca8452445b?auto=format&fit=crop&q=80&w=800',
         ingredients: [
-            '2 packs Ramen noodles',
-            '4 cups Chicken or pork broth',
-            '3 tbsp Miso paste',
-            '1 tbsp Chili oil (adjust for spice level)',
-            '1 cup Sliced mushrooms',
-            '2 Soft-boiled eggs',
-            'Green onions and sesame seeds for garnish'
+            '3 cups Raw Rice or Idli Rice',
+            '1 cup Urad Dal',
+            '1/2 tsp Fenugreek seeds',
+            '1 tbsp Chana Dal',
+            'Salt to taste',
+            'Oil or Ghee for cooking'
         ],
         recipe: [
-            'Heat the broth in a pot over medium heat. Once simmering, whisk in the miso paste and chili oil until fully dissolved.',
-            'Cook the ramen noodles separately according to package instructions. Drain and set aside.',
-            'In the broth, lightly cook the mushrooms until tender.',
-            'Divide the noodles into two large bowls and pour the hot miso broth over them.',
-            'Top each bowl with a soft-boiled egg (halved), green onions, and sesame seeds.',
-            'Serve hot with extra chili oil on the side if desired.'
+            'Soak rice, urad dal, chana dal, and fenugreek seeds together in water for 4-5 hours.',
+            'Grind the soaked mixture into a smooth, pourable batter. Add salt and mix well.',
+            'Cover and let the batter ferment in a warm place for 8-12 hours.',
+            'Heat a flat iron skillet (tawa) and pour a ladle of batter in the center. Spread it outward in a circular motion to make a thin circle.',
+            'Drizzle a little oil or ghee around the edges and cook until golden brown and crispy.',
+            'Fold and serve hot with chutney and sambar.'
         ]
     },
     {
-        id: 'margherita-pizza',
-        title: 'Classic Margherita Pizza',
-        description: 'A rustic Italian pizza with fresh mozzarella, basil, and a perfectly blistered crust.',
-        image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&q=80&w=800',
+        id: 'pongal',
+        title: 'Ven Pongal',
+        description: 'A comforting and savory porridge made of rice and lentils, tempered with black pepper and ghee.',
+        image: 'https://images.unsplash.com/photo-1614531341641-fc30f5dce9b2?auto=format&fit=crop&q=80&w=800',
         ingredients: [
-            '1 Pizza dough (store-bought or homemade)',
-            '1/2 cup Crushed San Marzano tomatoes',
-            '8 oz Fresh mozzarella cheese, sliced',
-            'A handful of Fresh basil leaves',
-            '2 tbsp Extra-virgin olive oil',
-            'Flaky sea salt'
+            '1/2 cup Raw Rice',
+            '1/2 cup Moong Dal (split yellow lentils)',
+            '4 cups Water',
+            '1 tsp Black peppercorns',
+            '1 tsp Cumin seeds',
+            '1 inch Ginger, finely chopped',
+            '1/4 cup Ghee',
+            'Cashews and curry leaves for tempering',
+            'Salt to taste'
         ],
         recipe: [
-            'Preheat your oven to its highest setting (usually 500°F or 260°C). If you have a pizza stone, place it in the oven to heat.',
-            'Roll or stretch the pizza dough out to a 10-12 inch circle on a floured surface.',
-            'Spread the crushed tomatoes evenly over the dough, leaving a small border for the crust.',
-            'Arrange the mozzarella slices on top of the tomatoes.',
-            'Bake for 8-12 minutes until the crust is golden and the cheese is bubbly and slightly browned.',
-            'Remove from oven, add fresh basil leaves, drizzle with olive oil, and sprinkle with sea salt before slicing.'
+            'Dry roast the moong dal slightly until aromatic. Wash the dal and rice together.',
+            'Cook the rice and dal with water and salt in a pressure cooker until soft and mushy (about 4-5 whistles).',
+            'Coarsely crush the black pepper and cumin seeds.',
+            'Heat ghee in a small pan. Add the crushed pepper-cumin mixture, ginger, cashews, and curry leaves.',
+            'Fry until cashews turn golden brown.',
+            'Pour the tempered mixture over the cooked rice and dal, mix thoroughly, and serve hot.'
         ]
     },
     {
-        id: 'avocado-toast',
-        title: 'Gourmet Avocado Toast',
-        description: 'Crispy sourdough topped with mashed avocado, cherry tomatoes, and microgreens.',
-        image: 'https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&q=80&w=800',
+        id: 'sambar',
+        title: 'South Indian Sambar',
+        description: 'A hearty lentil and mixed vegetable stew cooked with tamarind and freshly aromatic spices.',
+        image: 'https://images.unsplash.com/photo-1626779848520-213c32a0d17d?auto=format&fit=crop&q=80&w=800',
         ingredients: [
-            '2 slices Sourdough bread, thick-cut',
-            '1 large Ripe avocado',
-            '1/2 cup Cherry tomatoes, halved',
-            'Small pinch of Red pepper flakes',
-            '1 tbsp Lemon juice',
-            'Microgreens or arugula for topping'
+            '1/2 cup Toor Dal (split pigeon peas)',
+            '2 cups Mixed vegetables (drumsticks, carrots, pumpkin, onions)',
+            'Lemon-sized Tamarind (soaked in warm water to extract juice)',
+            '2 tbsp Sambar powder',
+            '1/2 tsp Turmeric powder',
+            'Mustard seeds, fenugreek, and cumin for tempering',
+            'Curry leaves and fresh coriander',
+            'Salt to taste',
+            'Oil for cooking'
         ],
         recipe: [
-            'Toast the sourdough slices until fully golden and crisp.',
-            'In a small bowl, roughly mash the avocado with the lemon juice, salt, and pepper.',
-            'Spread the avocado mixture generously onto the toasted bread.',
-            'Top with halved cherry tomatoes, a sprinkle of red pepper flakes, and microgreens.',
-            'Drizzle a tiny amount of olive oil over the top for an extra glossy finish and serve.'
+            'Pressure cook the toor dal with a pinch of turmeric and water until completely mushy. Mash it well.',
+            'In a large pot, cook the mixed vegetables with a little water and salt until tender.',
+            'Add the tamarind extract and boil for 5-7 minutes to remove the raw smell.',
+            'Add the sambar powder and the cooked dal to the vegetables. Mix well and let it simmer for 10 minutes.',
+            'In a separate small pan, heat oil, add mustard seeds, fenugreek, cumin, and curry leaves. Once they splutter, pour this tempering over the sambar.',
+            'Garnish with fresh coriander leaves and serve with rice, idli, or dosa.'
         ]
     },
     {
-        id: 'berry-pancakes',
-        title: 'Fluffy Berry Pancakes',
-        description: 'Thick, fluffy buttermilk pancakes stacked high and drowned in maple syrup and mixed berries.',
-        image: 'https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&q=80&w=800',
+        id: 'payasam',
+        title: 'Semiya Payasam',
+        description: 'A rich and creamy traditional dessert made with roasted vermicelli, milk, cardamom, and nuts.',
+        image: 'https://images.unsplash.com/photo-1596489392263-d1dfd9a60cb3?auto=format&fit=crop&q=80&w=800',
         ingredients: [
-            '1 1/2 cups All-purpose flour',
-            '2 tbsp Sugar',
-            '1 tbsp Baking powder',
-            '1 1/4 cups Buttermilk',
-            '1 Egg',
-            '1 cup Mixed berries (blueberries, raspberries)',
-            'Maple syrup and butter for serving'
+            '1/2 cup Vermicelli (Semiya)',
+            '4 cups Whole Milk',
+            '1/2 cup Sugar (adjust to taste)',
+            '2 tbsp Ghee',
+            '10-15 Cashews and Raisins',
+            '1/2 tsp Cardamom powder'
         ],
         recipe: [
-            'In a large mixing bowl, whisk together the flour, sugar, and baking powder.',
-            'In another bowl, whisk the buttermilk, egg, and a splash of vanilla extract if desired.',
-            'Pour the wet ingredients into the dry ingredients and gently fold together until just combined (lumps are fine).',
-            'Heat a lightly buttered griddle or pan over medium heat. Pour roughly 1/4 cup of batter per pancake.',
-            'Add a few berries onto the wet batter. Flip when bubbles form on the surface (about 2-3 minutes).',
-            'Cook for another 1-2 minutes until golden brown. Serve stacked with more berries, butter, and maple syrup.'
+            'Heat ghee in a pan and roast cashews until golden, then add raisins until they plump up. Set aside.',
+            'In the same pan, roast the vermicelli on low heat until it turns golden brown (if not pre-roasted).',
+            'In a heavy-bottomed pot, bring the milk to a boil. Reduce the heat and simmer for 5 minutes.',
+            'Add the roasted vermicelli to the boiling milk. Cook on low to medium heat until the vermicelli is soft.',
+            'Add sugar and stir continuously until completely dissolved.',
+            'Stir in the cardamom powder and the roasted nuts and raisins. Cook for another 2 minutes.',
+            'Serve warm or chilled.'
         ]
     },
     {
-        id: 'grilled-salmon',
-        title: 'Lemon Herb Grilled Salmon',
-        description: 'A healthy and flavorful dish featuring perfectly charred salmon with a zesty lemon-herb marinade.',
-        image: 'https://images.unsplash.com/photo-1485921325833-c519f76c4927?auto=format&fit=crop&q=80&w=800',
+        id: 'chettinad-chicken',
+        title: 'Chettinad Chicken Curry',
+        description: 'A fiery, wildly flavorful curry from Tamil Nadu, known for its complex blend of freshly roasted spices.',
+        image: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80&w=800',
         ingredients: [
-            '2 Salmon fillets',
-            '2 tbsp Olive oil',
-            '1 tbsp Fresh lemon juice',
-            '1 tsp Fresh dill, chopped',
-            '1 tsp Fresh thyme, chopped',
-            '2 cloves Garlic, minced',
-            'Salt and pepper'
+            '500g Chicken, cut into pieces',
+            '2 large Onions, finely chopped',
+            '2 Tomatoes, pureed or chopped',
+            'Curry leaves',
+            'Whole spices (Fennel, cumin, cloves, cardamom, cinnamon, star anise)',
+            'Dry red chilies and black peppercorns',
+            '2 tbsp Fresh coconut, grated',
+            'Ginger-garlic paste',
+            'Oil and Salt'
         ],
         recipe: [
-            'In a small bowl, mix olive oil, lemon juice, dill, thyme, garlic, salt, and pepper.',
-            'Brush the marinade evenly over the salmon fillets and let it sit for about 10-15 minutes.',
-            'Preheat the grill to medium-high heat and lightly oil the grates.',
-            'Place the salmon skin-side down on the grill and cook for 5-7 minutes.',
-            'Carefully flip the salmon and cook for an additional 2-3 minutes, depending on thickness, until opaque and easily flaked.',
-            'Serve with a side of asparagus or a light garden salad.'
+            'Dry roast the whole spices, dry red chilies, peppercorns, and grated coconut until fragrant and golden. Blend into a smooth paste with a little water.',
+            'Heat oil in a pan, add fennel seeds and curry leaves. Sauté the onions until deep golden brown.',
+            'Add ginger-garlic paste and sauté until the raw smell disappears.',
+            'Add the tomatoes and cook until the oil starts separating from the mixture.',
+            'Add the chicken pieces and sauté for 5 minutes to seal the juices.',
+            'Stir in the freshly ground spice paste and mix well so the chicken is fully coated.',
+            'Add water as needed, cover, and cook on medium heat for 20-25 minutes until the chicken is tender.',
+            'Garnish with coriander leaves and serve hot with paratha or rice.'
         ]
     }
 ];
