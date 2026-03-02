@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Gourmet Bites | Premium Food Gallery',
+  title: 'Ingredients-finder | Premium Food Gallery',
   description: 'A visually polished food image gallery to discover delicious recipes and ingredients.',
 };
 

@@ -7,8 +7,8 @@ export default function Header() {
     return (
         <header className={`${styles.header} glass`}>
             <nav className={styles.nav} aria-label="Main Navigation">
-                <Link href="/" className={styles.logo} aria-label="Gourmet Bites Home">
-                    <span className="gradient-text">Gourmet Bites</span>
+                <Link href="/" className={styles.logo} aria-label="Ingredients-finder Home">
+                    <span className="gradient-text">Ingredients-finder</span>
                 </Link>
                 <div className={styles.links}>
                     <Link href="/" className={styles.link}>Gallery</Link>

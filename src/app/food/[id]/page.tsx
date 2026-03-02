@@ -7,11 +7,11 @@ export async function generateMetadata(props: { params: Promise<{ id: string }> 
     const food = foods.find((f) => f.id === params.id);
 
     if (!food) {
-        return { title: 'Recipe | Gourmet Bites' };
+        return { title: 'Recipe | Ingredients-finder' };
     }
 
     return {
-        title: `${food.title} | Gourmet Bites`,
+        title: `${food.title} | Ingredients-finder`,
         description: food.description,
     };
 }
