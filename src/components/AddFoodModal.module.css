@@ -1,0 +1,106 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    backdrop-filter: blur(4px);
+    padding: 1rem;
+}
+
+.modal {
+    width: 100%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 16px;
+    padding: 2rem;
+    background: var(--background);
+    border: 1px solid var(--card-border);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.closeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--foreground);
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.closeButton:hover {
+    opacity: 1;
+}
+
+.title {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.label {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid var(--card-border);
+    background: var(--card-bg);
+    color: var(--foreground);
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.input:focus,
+.textarea:focus {
+    outline: 2px solid var(--primary);
+    border-color: transparent;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submitButton {
+    margin-top: 1rem;
+    padding: 0.875rem;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(to right, var(--gradient-1), var(--gradient-2));
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.submitButton:hover {
+    opacity: 0.9;
+}
