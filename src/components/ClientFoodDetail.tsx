@@ -10,31 +10,19 @@ export default function ClientFoodDetail({ id, defaultFoods }: { id: string, def
     const [food, setFood] = useState<Food | null | undefined>(undefined);
 
     useEffect(() => {
-        const fetchFood = async () => {
-            try {
-                const res = await fetch('/api/foods');
-                if (res.ok) {
-                    const allFoods: Food[] = await res.json();
-                    const found = allFoods.find((f) => f.id === id);
-                    if (found) {
-                        setFood(found);
-                        return;
-                    }
-                }
-            } catch (err) {
-                console.error("Failed to fetch from API", err);
-            }
+        // Hydrate from localStorage to find the community-added recipes
+        const storedFoods = localStorage.getItem('gourmet_bites_foods');
+        let allFoods = defaultFoods;
+        if (storedFoods) {
+            allFoods = JSON.parse(storedFoods);
+        }
 
-            // Fallback to defaults
-            const foundFallback = defaultFoods.find((f) => f.id === id);
-            setFood(foundFallback || null);
-        };
-
-        fetchFood();
+        const found = allFoods.find((f) => f.id === id);
+        setFood(found || null);
     }, [id, defaultFoods]);
 
     if (food === undefined) {
-        return <div style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>Loading recipe...</div>;
+        return <div style={{ minHeight: '100vh' }}></div>; // Loading placeholder
     }
 
     if (food === null) {

@@ -1,17 +1,11 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
 generator client {
-  provider = "prisma-client-js"
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
 }
 
 datasource db {
   provider = "sqlite"
-  url      = env("DATABASE_URL")
-}
-
-model Food {
-  id          String   @id
-  title       String
-  description String
-  image       String
-  ingredients String // Store as JSON string since SQLite doesn't natively support arrays well
-  recipe      String // Store as JSON string
 }
