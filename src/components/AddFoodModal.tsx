@@ -17,17 +17,6 @@ export default function AddFoodModal({ isOpen, onClose, onAdd }: AddFoodModalPro
 
     if (!isOpen) return null;
 
-    const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const file = e.target.files?.[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onloadend = () => {
-                setImage(reader.result as string);
-            };
-            reader.readAsDataURL(file);
-        }
-    };
-
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         if (!title || !description) return;
@@ -90,27 +79,15 @@ export default function AddFoodModal({ isOpen, onClose, onAdd }: AddFoodModalPro
                     </div>
 
                     <div className={styles.formGroup}>
-                        <label className={styles.label} htmlFor="image">Image (URL or Upload)</label>
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                            <input
-                                id="image"
-                                className={styles.input}
-                                type="text"
-                                value={image}
-                                onChange={(e) => setImage(e.target.value)}
-                                placeholder="https://images.unsplash.com/..."
-                            />
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                                <span style={{ fontSize: '0.875rem', opacity: 0.8 }}>OR</span>
-                                <input
-                                    type="file"
-                                    accept="image/*"
-                                    onChange={handleImageUpload}
-                                    className={styles.input}
-                                    style={{ padding: '0.5rem', flex: 1 }}
-                                />
-                            </div>
-                        </div>
+                        <label className={styles.label} htmlFor="image">Image URL (Optional)</label>
+                        <input
+                            id="image"
+                            className={styles.input}
+                            type="url"
+                            value={image}
+                            onChange={(e) => setImage(e.target.value)}
+                            placeholder="https://images.unsplash.com/..."
+                        />
                     </div>
 
                     <div className={styles.formGroup}>

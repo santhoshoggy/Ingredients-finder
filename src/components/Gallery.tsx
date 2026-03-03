@@ -49,19 +49,6 @@ export default function Gallery() {
         }
     };
 
-    const handleDeleteFood = async (id: string) => {
-        try {
-            const res = await fetch(`/api/foods/${id}`, {
-                method: 'DELETE',
-            });
-            if (res.ok) {
-                setFoods(foods.filter(food => food.id !== id));
-            }
-        } catch (err) {
-            console.error("Failed to delete food", err);
-        }
-    };
-
     return (
         <section className={styles.section} aria-labelledby="gallery-title">
             <div className={styles.header}>
@@ -78,11 +65,7 @@ export default function Gallery() {
             ) : (
                 <div className={styles.gridContainer}>
                     {foods.map((food, index) => (
-                        <FoodCard
-                            key={`${food.id}-${index}`}
-                            food={food}
-                            onDelete={handleDeleteFood}
-                        />
+                        <FoodCard key={`${food.id}-${index}`} food={food} />
                     ))}
                 </div>
             )}
