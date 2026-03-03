@@ -17,6 +17,21 @@ export default function AddFoodModal({ isOpen, onClose, onAdd }: AddFoodModalPro
 
     if (!isOpen) return null;
 
+    const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (file) {
+            if (file.size > 5 * 1024 * 1024) {
+                alert('File is too large! Please select an image under 5MB.');
+                return;
+            }
+            const reader = new FileReader();
+            reader.onloadend = () => {
+                setImage(reader.result as string);
+            };
+            reader.readAsDataURL(file);
+        }
+    };
+
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         if (!title || !description) return;
@@ -79,15 +94,23 @@ export default function AddFoodModal({ isOpen, onClose, onAdd }: AddFoodModalPro
                     </div>
 
                     <div className={styles.formGroup}>
-                        <label className={styles.label} htmlFor="image">Image URL (Optional)</label>
-                        <input
-                            id="image"
-                            className={styles.input}
-                            type="url"
-                            value={image}
-                            onChange={(e) => setImage(e.target.value)}
-                            placeholder="https://images.unsplash.com/..."
-                        />
+                        <label className={styles.label} htmlFor="image">Image URL or Upload a File</label>
+                        <div style={{ display: 'flex', gap: '10px', flexDirection: 'column' }}>
+                            <input
+                                id="image"
+                                className={styles.input}
+                                type="text"
+                                value={image}
+                                onChange={(e) => setImage(e.target.value)}
+                                placeholder="Paste an image URL here..."
+                            />
+                            <input
+                                type="file"
+                                accept="image/*"
+                                onChange={handleImageUpload}
+                                className={styles.fileInput}
+                            />
+                        </div>
                     </div>
 
                     <div className={styles.formGroup}>
