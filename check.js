@@ -1,6 +1,8 @@
 const { execSync } = require('child_process');
+const fs = require('fs');
 try {
-    execSync('npm run build', { encoding: 'utf-8' });
+    execSync('npx prisma format', { encoding: 'utf-8' });
 } catch (err) {
-    console.log(err.stdout + "\n" + err.stderr);
+    const clean = (err.stdout + '\n' + err.stderr + '\n' + err.message).replace(/\r/g, '');
+    fs.writeFileSync('error_clean.txt', clean);
 }

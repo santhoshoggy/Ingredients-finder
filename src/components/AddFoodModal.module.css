@@ -104,25 +104,3 @@
 .submitButton:hover {
     opacity: 0.9;
 }
-
-.fileInput {
-    padding: 0.5rem 0;
-    color: var(--foreground);
-    font-size: 0.95rem;
-}
-
-.fileInput::file-selector-button {
-    background: linear-gradient(to right, var(--gradient-1), var(--gradient-2));
-    border: none;
-    border-radius: 6px;
-    color: white;
-    padding: 0.5rem 1rem;
-    margin-right: 1rem;
-    cursor: pointer;
-    font-weight: 600;
-    transition: opacity 0.2s ease;
-}
-
-.fileInput::file-selector-button:hover {
-    opacity: 0.9;
-}

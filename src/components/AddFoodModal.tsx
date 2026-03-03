@@ -20,10 +20,6 @@ export default function AddFoodModal({ isOpen, onClose, onAdd }: AddFoodModalPro
     const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
         const file = e.target.files?.[0];
         if (file) {
-            if (file.size > 5 * 1024 * 1024) {
-                alert('File is too large! Please select an image under 5MB.');
-                return;
-            }
             const reader = new FileReader();
             reader.onloadend = () => {
                 setImage(reader.result as string);
@@ -94,22 +90,26 @@ export default function AddFoodModal({ isOpen, onClose, onAdd }: AddFoodModalPro
                     </div>
 
                     <div className={styles.formGroup}>
-                        <label className={styles.label} htmlFor="image">Image URL or Upload a File</label>
-                        <div style={{ display: 'flex', gap: '10px', flexDirection: 'column' }}>
+                        <label className={styles.label} htmlFor="image">Image (URL or Upload)</label>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                             <input
                                 id="image"
                                 className={styles.input}
                                 type="text"
                                 value={image}
                                 onChange={(e) => setImage(e.target.value)}
-                                placeholder="Paste an image URL here..."
+                                placeholder="https://images.unsplash.com/..."
                             />
-                            <input
-                                type="file"
-                                accept="image/*"
-                                onChange={handleImageUpload}
-                                className={styles.fileInput}
-                            />
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                                <span style={{ fontSize: '0.875rem', opacity: 0.8 }}>OR</span>
+                                <input
+                                    type="file"
+                                    accept="image/*"
+                                    onChange={handleImageUpload}
+                                    className={styles.input}
+                                    style={{ padding: '0.5rem', flex: 1 }}
+                                />
+                            </div>
                         </div>
                     </div>
 
